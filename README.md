@@ -3,10 +3,10 @@ Jan Tabaszewski   @Tabasz
 
 ## AVX-512 sorting in C++
 
-This repository contains the code of our master thesis at the University of Warsaw: "Optimization of the fastest available primitive type sorting algorithm using AVX-512."
+This repository contains the code of our master thesis at the University of Warsaw: "Optimization of the fastest available primitive type sorting algorithm using AVX-512"
 
-We have adapted the code from ''Fast and Robust Vectorized In-Place Sorting of Primi-tive Type'', Blacher, Giesen, Kühne, SEA 2021 (https://drops.dagstuhl.de/opus/volltexte/2021/13775/pdf/LIPIcs-SEA-2021-3.pdf) to AVX512 and further optimized it.
-We believe that at the time of the publication of the code, it is the fastest open source implementation of 32-bit integers for Intel CPUs
+We have adapted the code from ''Fast and Robust Vectorized In-Place Sorting of Primitive Type'', Blacher, Giesen, Kühne, SEA 2021 (https://drops.dagstuhl.de/opus/volltexte/2021/13775/pdf/LIPIcs-SEA-2021-3.pdf) to AVX512 and further optimized it.
+We believe that at the time of the publication of the code, it is the fastest open source implementation of 32-bit integer sorting for Intel CPUs
 
 Together with the code we provide tools used for automatic generation of it and tools for testing and comparing it's performance with other open source high performance sorting implementations.
 
@@ -22,4 +22,4 @@ There are multiple testing scenarios defined in Makefile, most important one is
 ## Automatic code generation
 Sorting network code has been generated automatically. The files responsible are:
 utils/irregular_networks.py - generates column sorting by irregular networks
-utils/network_generator.cpp - generates column sorting by the Odd-even networks as well as column merging by a modified Odd-even network.
+utils/network_generator.cpp - generates column sorting by the Odd-even network as well as column merging by a modified Odd-even network.

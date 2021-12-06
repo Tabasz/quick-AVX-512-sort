@@ -57,3 +57,4 @@ correctness: $(OBJS512) test/correctness.cpp test/speed_report/sorts/sort_avx512
 
 bin/%.o: src/%.cpp $(DEPS) $(MAKEFILE)
 	$(CXX) -c $(CXXFLAGS) -o $@ $<
+
